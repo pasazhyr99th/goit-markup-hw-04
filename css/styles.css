@@ -111,7 +111,8 @@ ul {
 
 .contacts-header .mail-header,
 .contacts-header .tel-header {
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -119,6 +120,11 @@ ul {
 .mail-header:hover, .tel-header:hover,
 .mail-header:focus, .tel-header:focus {
     color: var(--blue-text-color);
+}
+
+.header-icon {
+    fill: currentColor;
+    margin-right: 10px;
 }
 
 .header {
@@ -204,6 +210,14 @@ ul {
     margin-left: 30px;
 }
 
+.benefits-content {
+    display: block;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+
+    background-color: var(--bg-team-color);
+}
+
 .benefits-title {
     margin-bottom: 10px;
 
@@ -218,34 +232,6 @@ ul {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-}
-
-.benefits-box .item::before {
-    display: block;
-    content: "";
-    height: 120px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--bg-team-color);
-
-    margin-bottom: 30px;
-}
-
-.icon-details {
-    background-image: url();
-}
-
-.icon-punctuality {
-    background-image: url();
-}
-
-.icon-planning {
-    background-image: url();
-}
-
-.icon-technologies {
-    background-image: url();
 }
 
 .features {
@@ -311,11 +297,29 @@ ul {
 }
 
 .position {
+    margin-bottom: 16px;
+
     color: var(--contacts-header-color);
     font-size: 16px;
     font-weight: 400;
     line-height: 1.19;
     letter-spacing: 0.03em;
+}
+
+.social-link {
+    display: flex;
+}
+
+.social-link {
+    display: block;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    border: none;
+}
+
+.social-link .item + .item {
+    margin-left: 10px;
 }
 
 .footer {
