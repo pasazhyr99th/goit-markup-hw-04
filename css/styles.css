@@ -12,6 +12,7 @@
     --border-header: #ECECEC;
     --border-project-photo: #EEEEEE;
     --icons-noactive-color: #AFB1B8;
+    --bg-footer-soc: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -48,7 +49,7 @@ ul {
     margin-right: auto;
     margin-left: auto;
 
-    outline: 1px dotted tomato;
+    /* outline: 1px dotted tomato; */
 }
 
 .main-nav {
@@ -355,6 +356,9 @@ ul {
 
 .clients {
     display: flex;
+}
+
+.item-clients {
     flex-basis: calc((100% - 150px) / 6);
 }
 
@@ -366,7 +370,6 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
     height: 92px;
     padding: 0;
     
@@ -376,7 +379,6 @@ ul {
 
 .clients-link:hover {
     color: var(--blue-text-color);
-    border-color: var(--blue-text-color);
 }
 
 .client-icon {
@@ -388,11 +390,21 @@ ul {
     border-radius: 4px;
 }
 
+.clients .item-clients:hover {
+    border-color: var(--blue-text-color);
+}
+
+/* Footer */
+
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
 
     background: var(--bg-footer-color);
+}
+
+.footer-content {
+    display: flex;
 }
 
 .footer-logo {
@@ -438,6 +450,60 @@ ul {
     color: var(--blue-text-color);
 }
 
+.footer-soc {
+    margin-left: 93px;
+    margin-top: 12px;
+}
+
+.footer-soc-title {
+    margin-bottom: 20px;
+
+    color: var(--primary-bg-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-actions {
+    display: flex;
+}
+
+.item-footer-icon {
+    flex-basis: calc((100% - 40px) / 4);
+
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+
+    color: var(--primary-bg-color);
+    background-color: var(--bg-footer-soc);
+    border: none;
+    border-radius: 50%;
+}
+
+.footer-social:hover {
+    background-color: var(--blue-text-color);
+}
+
+.team-icon {
+    fill: currentColor;
+}
+
+.item-footer-icon + .item-footer-icon {
+    margin-left: 10px;
+}
+
+/* List of buttons on Portfolio */
+
 .btns {
     margin-bottom: 50px;
     display: flex;
@@ -473,6 +539,8 @@ ul {
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+/* List of Projects */
 
 .list-projects {
     display: flex;
