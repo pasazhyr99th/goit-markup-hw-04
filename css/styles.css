@@ -331,7 +331,8 @@ ul {
     border-radius: 50%;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
     color: var(--primary-bg-color);
     background-color: var(--blue-text-color);
 }
@@ -376,7 +377,8 @@ ul {
     border: none;
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
     color: var(--blue-text-color);
 }
 
@@ -389,7 +391,8 @@ ul {
     border-radius: 4px;
 }
 
-.clients .item-clients:hover {
+.clients .item-clients:hover,
+.clients .item-clients:focus {
     border-color: var(--blue-text-color);
 }
 
@@ -472,7 +475,6 @@ ul {
 
 .item-footer-icon {
     flex-basis: calc((100% - 40px) / 4);
-
 }
 
 .footer-social {
@@ -489,7 +491,8 @@ ul {
     border-radius: 50%;
 }
 
-.footer-social:hover {
+.footer-social:hover,
+.footer-social:focus {
     background-color: var(--blue-text-color);
 }
 
